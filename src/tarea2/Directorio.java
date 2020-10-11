@@ -55,7 +55,7 @@ public class Directorio {
     }  
   
   /**
-   * Método para agregar un Artículo
+   * Método para agregar un Contacto
    * @param a El artículo que se va a agregar
    */
     public void agregar(Contacto a){

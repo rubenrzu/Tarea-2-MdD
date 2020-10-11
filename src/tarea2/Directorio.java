@@ -63,5 +63,9 @@ public class Directorio {
             crecerArreglo(1);
         if(!estaLleno()) //Verifica si hay espacio
             contactos[na++] = a;
-  }    
+  } 
+    
+    public String mostrarContacto(String nom){
+    
+    }
 }

@@ -1,0 +1,71 @@
+
+import static java.lang.System.in;
+import java.util.Scanner;
+
+/**
+ *
+ * @author HP CSS30IXX
+ */
+public class MiDirectorio {
+
+    public static void main(String[] args) {
+        String nombre, apodo, correo, face, twit;
+        int telefonoCasa, cel, dia, mes;
+        Menus m = new Menus();
+        Directorio directorio = null;
+        Scanner lector = new Scanner(System.in);
+        Scanner lector1 = new Scanner(in).useDelimiter("\n");
+        String archivo = null;
+        boolean cond = true;
+
+        System.out.println("\t*********BIENVENIDO*******");
+        System.out.println("Ingrese el numero de contactos que desea agregar:");
+        int tam = lector.nextInt();
+        do {
+            m.menuprincipal();
+            System.out.println("Ingrese el numero de la opcion que desee");
+            int op1 = lector.nextInt();
+            switch (op1) {
+                case 1:
+                    m.menuContactos();
+                    int op2 = lector.nextInt();
+                    switch (op2) {
+                        case 1:
+                            System.out.println("Escriba el nombre:");
+                            nombre = lector1.next().toUpperCase();
+                            System.out.println("Ponga su apodo:");
+                            apodo = lector1.next().toUpperCase();
+                            System.out.println("Ingresa el telefono de casa");
+                            telefonoCasa = lector.nextInt();
+                            System.out.println("Ingresa el celular de tu amigo");
+                            cel = lector.nextInt();
+                            System.out.println("Ingresa el cumpleaños de tu amigo");
+                            System.out.println("Dia:");
+                            dia = lector.nextInt();
+                            System.out.println("Mes:");
+                            m.menuMeses();
+                            mes = lector.nextInt();
+                            System.out.println("Ingrese su correo");
+                            correo = lector1.next().toUpperCase();
+                            System.out.println("Ingrese su Facebook");
+                            face = lector1.next().toUpperCase();
+                            System.out.println("Ingrese su Twitter");
+                            twit = lector1.next().toUpperCase();
+                            directorio.agregar(new Amigos(nombre, apodo, telefonoCasa, cel,
+                                    dia, mes, correo, face, twit));
+                            break;
+                        case 2: //Salir
+                            System.out.println("Saliendo del menu agregar");
+                            break;
+                        default:
+                            System.out.println("Opcion invalida!");
+                            break;
+                    }
+                   
+            }
+            cond = false;
+
+        } while (cond);
+    }
+
+}

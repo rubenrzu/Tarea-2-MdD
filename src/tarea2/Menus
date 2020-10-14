@@ -22,7 +22,7 @@ public class Menus {
 
     public void menuEliminar() {
         System.out.println("1. Eliminar contacto dado el nombre");
-        System.out.println("2. Elinar todos los contactos dado su nombre");
+        System.out.println("2. Eliminar todos los contactos dado su nombre");
         System.out.println("3. Eliminar amigo dado el nombre");
         System.out.println("4. Eliminar cliente dado el nombre");
         System.out.println("5. Eliminar familiar dado el nombre");

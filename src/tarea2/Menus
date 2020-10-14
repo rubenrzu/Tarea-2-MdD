@@ -51,8 +51,8 @@ public class Menus {
         System.out.println("5. Mostrar a todos los contactos que tengan twiter y/o Facebook");
         System.out.println("6. Mostrar a todos los amigos");
         System.out.println("7. Mostrar a todos los clientes");
-        System.out.println("6. Mostrar a todos los familiares");
-        System.out.println("6. Salir");
+        System.out.println("8. Mostrar a todos los familiares");
+        System.out.println("9. Salir");
     }
     
     public void menuMeses(){
